@@ -1,7 +1,28 @@
 package com.company;
 
 /**
- * Created by Sanne on 3-3-2016.
+ * Created hoihoi
  */
 public class Grid {
+
+    private int rows;
+    private int columns;
+    private int[][] grid;
+
+
+  public Grid(int rows, int columns){
+      this.rows = rows;
+      this.columns = columns;
+      grid = new int[rows - 1][columns - 1];
+      for(int i = 0; i < rows; i++){
+          for(int j = 0; j<columns; j++){
+              grid[i][j] = 0;
+          }
+      }
+
+    }
+
+    public int[][] getGrid(){
+        return grid;
+    }
 }
